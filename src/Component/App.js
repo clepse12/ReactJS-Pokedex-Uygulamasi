@@ -39,7 +39,7 @@ class App extends React.Component {
                 <img src={"https://fontmeme.com/permalink/200616/b6a03160ca88d81316a7ea2527734ac9.png"} alt=""/>
 <br/><br/><br/>
                 <br/>
-                {isLoading && "Loading.."}
+                {isLoading && "Loading..."}
                 <br/><br/><br/>
                 <List pokemon={this.state.pokemon}/>
             </div>
