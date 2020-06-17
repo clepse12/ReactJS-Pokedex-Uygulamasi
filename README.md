@@ -2,6 +2,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ![Screenshot](screenshot.png)
 
+## Biz Kimiz
+Biz değil PHP kullanmak görmek bile istemeyen Rict Canavarlarıyız !!!
+
 ## Available Scripts
 
 In the project directory, you can run:
