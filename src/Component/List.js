@@ -13,18 +13,18 @@ class List extends Component {
         })
 
     }
-    messages=()=>{
+    messages = () => {
         alert("Merhaba ! Lütfen Poke Topunun Yanına Pokemon Adını Gir !!")
     }
 
 
     render() {
 
-        const FilteredProps=this.props.pokemon.filter(
-            contact=>
+        const FilteredProps = this.props.pokemon.filter(
+            contact =>
                 contact.name.toLowerCase().indexOf(
                     this.state.filterText.toLowerCase()
-                ) !==-1
+                ) !== -1
         );
         return (
 
@@ -33,7 +33,7 @@ class List extends Component {
 
                 <div className={"search"}>
                     <input name={"search"} id={"search-box"} onChange={this.searchBox} placeholder={"Pokemon Ara..."}/>
-                    <a onClick={this.messages}><img src={"favicon.ico"} className={"image"} alt=".."/></a>
+                    <button onClick={this.messages}><img src={"favicon.ico"} className={"image"} alt=".."/></button>
 
 
                 </div>
@@ -144,7 +144,7 @@ class List extends Component {
                             </div>
                             <div className="BackCard">
 
-                                <img src={sonuc.sprites['back_default']} style={{"width": "150px", "height": "150px"}}/>
+                                <img src={sonuc.sprites['back_default']} style={{"width": "150px", "height": "150px"}} alt=""/>
                                 <p className={"order"}>#{sonuc.order}</p>
 
                             </div>
